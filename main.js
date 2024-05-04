@@ -20,7 +20,7 @@
 
 
 
-// function User(age,color,gender,width,height) {
+// function User(name,age,color,gender,width,height) {
 //  this.name = name;
 //  this.age = age;
 //  this.color = color;
@@ -38,17 +38,41 @@
 //  let width = prompt("cats's width:");
 //  let height=prompt("cats's height:");
 
-//  let user = new User(age,color,gender,width,height);
+//  let user = new User(name,age,color,gender,width,height);
 //  console.log(user);
 // }
 
-// fizzbuzz misoli
-let n=Number(prompt("n sonni kiriting:"));
-for(let i=0;i<=n;i++){
- if(n%15==0)
- console.log("FizzBuzz");
- else if (n%3==0)
- console.log("Fizz");
- else if(n%5==0)
- console.log("Buzz");
+
+
+
+function Car(name,model,year,color) {
+  this.name=name;
+ this.model = model;
+ this.year = year;
+ this.color = color;
+
+
 }
+
+let n=Number(prompt("takrorlanish kerak bo'lgan sonni kiriting:"))
+for (let i = 0; i <n; i++) {
+ let name = prompt("car's name:");
+ let model = prompt("car's model:");
+ let year = prompt("car's year:");
+ let color = prompt("car's color:");
+
+ let user = new Car(name,model,year,color);
+ console.log(user);
+}
+
+
+// fizzbuzz misoli
+// let n=Number(prompt("n sonni kiriting:"));
+// for(let i=0;i<=n;i++){
+//  if(n%15==0)
+//  console.log("FizzBuzz");
+//  else if (n%3==0)
+//  console.log("Fizz");
+//  else if(n%5==0)
+//  console.log("Buzz");
+// }
